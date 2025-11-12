@@ -5,9 +5,8 @@ from geopy.distance import geodesic
 import os
 import shutil
 
-# -------------------------
 # LOCALIZACION DE ARCHIVO MAS RECIENTE
-# -------------------------
+
 carpeta_base = "/home/itoroc/Database"
 csvs = [f for f in os.listdir(carpeta_base) if f.endswith(".csv")]
 csvs.sort(key=lambda f: os.path.getmtime(os.path.join(carpeta_base, f)), reverse=True)
@@ -27,9 +26,8 @@ if archivo_reciente != ruta_estandar:
     shutil.copy(archivo_reciente, ruta_estandar)
 
 
-# -------------------------
 # CARGAR DATOS
-# -------------------------
+
 df_real = pd.read_csv(ruta_estandar)
 df_real["Tipo"] = "Sensor"
 
@@ -37,9 +35,9 @@ df_real["Tipo"] = "Sensor"
 if "D_uSv_h" in df_real.columns:
     df_real.rename(columns={"D_uSv_h": "Dosis_uSv_h"}, inplace=True)
 
-# -------------------------
+
 # UBICAR FOCO Y PRIMERA MEDICION
-# -------------------------
+
 indice_max = df_real[df_real["CPM"] == df_real["CPM"].max()].index[0]
 indice_ini = df_real.index[0]
 
@@ -48,9 +46,9 @@ lon_centro = df_real.loc[indice_max, "Longitud"]
 lat_ini = df_real.loc[indice_ini, "Latitud"]
 lon_ini = df_real.loc[indice_ini, "Longitud"]
 
-# -------------------------
+
 # COLORES Y PARAMETROS
-# -------------------------
+
 colormap_int = {
     0: "#B0B0B0",  # Gris
     1: "#ADFF2F",  # Verde
@@ -68,9 +66,9 @@ grosor_por_nivel = {
     5: 3.5
 }
 
-# -------------------------
+
 # ASIGNACION DE NIVELES
-# -------------------------
+
 def calcular_nivel(cpm):
     if cpm >= 5 and cpm <= 150:
         return 1
@@ -87,9 +85,9 @@ def calcular_nivel(cpm):
 
 df_real["Nivel"] = df_real["CPM"].apply(calcular_nivel)
 
-# -------------------------
+
 # DISTANCIAS
-# -------------------------
+
 x_centro = 0  # Definido como origen
 y_centro = 0
 
@@ -109,9 +107,9 @@ for nivel in range(2, 6):
 nuevo_radio_exterior[1] = nuevo_radio_exterior[2] + 10 if nuevo_radio_exterior[2] else 15
 
 
-# -------------------------
+
 # CREAR MAPA FOLIUM
-# -------------------------
+
 m = folium.Map(location=[lat_centro, lon_centro], zoom_start=20, tiles='cartodbpositron')
 
 # Anadir puntos
@@ -153,9 +151,9 @@ folium.PolyLine(
     tooltip=texto_distancia
 ).add_to(m)
 
-# -------------------------
+
 # GUARDAR MAPA
-# -------------------------
+
 ruta_html = "/home/itoroc/zonas/mapa_zonas.html"
 m.save(ruta_html)
 print(f"? Mapa generado: {ruta_html}")
