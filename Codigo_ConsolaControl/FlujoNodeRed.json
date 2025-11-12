@@ -1,0 +1,2559 @@
+[
+    {
+        "id": "f39f807af33cc2fa",
+        "type": "tab",
+        "label": "Datos del procedimiento",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "200d5289ba083f9b",
+        "type": "tab",
+        "label": "Mapa radiologico",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e62d6a784aec6957",
+        "type": "tab",
+        "label": "Tabla Historica",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c5e8c60895513477",
+        "type": "tab",
+        "label": "Zonas de Exclusión",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8eb05c90b84f0bfd",
+        "type": "tab",
+        "label": "Gestión de Procedimientos",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e0123d575c85681b",
+        "type": "mqtt-broker",
+        "name": "RPI",
+        "broker": "192.168.1.185",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "aaf07c0356d3f944",
+        "type": "mqtt-broker",
+        "name": "LAPTOP",
+        "broker": "192.168.1.143",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "eb5d4934ed72ba3f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "DETECTOR DE RADIACIÓN GEOREFERENCIADO",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ba1bb3898d9fbd06",
+        "type": "ui_tab",
+        "name": "DATOS DEL PROCEDIMIENTO",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2fdd098993eda437",
+        "type": "ui_tab",
+        "name": "GESTIÓN DE PROCEDIMIENTOS",
+        "icon": "list",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b4af1fa595f2733d",
+        "type": "ui_tab",
+        "name": "ZONAS DE EXCLUSION",
+        "icon": "fa-dot-circle-o",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dab0c6fb60eb9f22",
+        "type": "ui_group",
+        "name": "Archivo",
+        "tab": "ba1bb3898d9fbd06",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "39b2c9bb2c8cfa9b",
+        "type": "ui_tab",
+        "name": "MAPA RADIOLÓGICO",
+        "icon": "map",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ddd9310febe2f04f",
+        "type": "mqtt-broker",
+        "name": "Localhost",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3b761b0f2d4f5c23",
+        "type": "ui_tab",
+        "name": "TABLA HISTÓRICA",
+        "icon": "view_column",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9a92d61570eaea2b",
+        "type": "ui_group",
+        "name": "Gráficas",
+        "tab": "39b2c9bb2c8cfa9b",
+        "order": 2,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f60a2e206e02e3b2",
+        "type": "ui_group",
+        "name": "Localización del Sensor",
+        "tab": "39b2c9bb2c8cfa9b",
+        "order": 1,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d54a558ac6792b0",
+        "type": "ui_group",
+        "name": "Tabla",
+        "tab": "3b761b0f2d4f5c23",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b33513500f156912",
+        "type": "ui_group",
+        "name": "Antecedentes del Procedimiento",
+        "tab": "ba1bb3898d9fbd06",
+        "order": 2,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2ebe179561139af0",
+        "type": "ui_group",
+        "name": "Listado de Procedimientos",
+        "tab": "2fdd098993eda437",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "40ce9a1e38423cc3",
+        "type": "ui_group",
+        "name": "Zonas de Exclusión Radiológica",
+        "tab": "b4af1fa595f2733d",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "398190955dcda181",
+        "type": "ui_spacer",
+        "z": "200d5289ba083f9b",
+        "name": "spacer",
+        "group": "f60a2e206e02e3b2",
+        "order": 5,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "4bc0d13671997d09",
+        "type": "ui_spacer",
+        "z": "c5e8c60895513477",
+        "name": "spacer",
+        "group": "7d54a558ac6792b0",
+        "order": 5,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "bc3449d131ea9cbc",
+        "type": "ui_group",
+        "name": "Antecedentes del Procedimiento",
+        "tab": "ba1bb3898d9fbd06",
+        "order": 2,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e7b65e78c4164a62",
+        "type": "ui_group",
+        "name": "Listado de Procedimientos",
+        "tab": "2fdd098993eda437",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4c2af0f66e13d282",
+        "type": "ui_group",
+        "name": "Zonas de Exclusión Radiológica",
+        "tab": "b4af1fa595f2733d",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d9416956976cc2f7",
+        "type": "ui_spacer",
+        "z": "c5e8c60895513477",
+        "name": "spacer",
+        "group": "4c2af0f66e13d282",
+        "order": 3,
+        "width": 19,
+        "height": 1
+    },
+    {
+        "id": "d3fbe11fdd827077",
+        "type": "ui_text_input",
+        "z": "f39f807af33cc2fa",
+        "name": "Input nombre operacion",
+        "label": "Ingrese nombre de operación",
+        "tooltip": "",
+        "group": "dab0c6fb60eb9f22",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "entrada",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "09a33ac55c70be63",
+                "2cb71d85333a0994"
+            ]
+        ]
+    },
+    {
+        "id": "24935f336f02e616",
+        "type": "ui_button",
+        "z": "f39f807af33cc2fa",
+        "name": "Botón Guardar",
+        "group": "dab0c6fb60eb9f22",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Guardar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "disparar",
+        "topicType": "str",
+        "x": 240,
+        "y": 380,
+        "wires": [
+            [
+                "09a33ac55c70be63",
+                "404e5a1137ebb379",
+                "1c3acf8382b2b663",
+                "d00ff358ed507b44",
+                "f49592c5a689c91c",
+                "dc06886c6851352a"
+            ]
+        ]
+    },
+    {
+        "id": "09a33ac55c70be63",
+        "type": "function",
+        "z": "f39f807af33cc2fa",
+        "name": "Lógica input",
+        "func": "// Si el mensaje viene del input\nif (msg.topic === \"entrada\") {\n    flow.set(\"texto_input\", msg.payload);\n    return null;\n}\n\n// Si el mensaje viene del botón\nif (msg.topic === \"disparar\") {\n    let texto = flow.get(\"texto_input\") || \"(sin texto)\";\n    msg.payload = texto;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "4863ee4e305e7249",
+                "28acfb5cd7233fd4"
+            ]
+        ]
+    },
+    {
+        "id": "4863ee4e305e7249",
+        "type": "ui_text",
+        "z": "f39f807af33cc2fa",
+        "group": "bc3449d131ea9cbc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Nombre Operación",
+        "label": "Nombre de Operación:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 750,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2cb71d85333a0994",
+        "type": "function",
+        "z": "f39f807af33cc2fa",
+        "name": "function 1",
+        "func": "if (msg.topic === \"entrada\") {\n    global.set(\"operacion\", msg.payload.trim());\n}\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28acfb5cd7233fd4",
+        "type": "ui_toast",
+        "z": "f39f807af33cc2fa",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Nombre de operación guardado",
+        "name": "Notificación",
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "45011a06603c5c77",
+        "type": "ui_text",
+        "z": "f39f807af33cc2fa",
+        "group": "bc3449d131ea9cbc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Dirección",
+        "label": "Dirección actual: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 720,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "404e5a1137ebb379",
+        "type": "function",
+        "z": "f39f807af33cc2fa",
+        "name": "Toma dirección",
+        "func": "let direccion = global.get(\"ultima_direccion\") || \"Dirección no disponible\";\nmsg.payload = direccion;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "45011a06603c5c77"
+            ]
+        ]
+    },
+    {
+        "id": "1c3acf8382b2b663",
+        "type": "function",
+        "z": "f39f807af33cc2fa",
+        "name": "Borrar Datos Previos",
+        "func": "// Borrar tabla de datos principal\nglobal.set(\"tabla_datos\", []);\n\n// Borrar datos usados para gráfica CPM (si se guardan en una variable global)\nglobal.set(\"grafica_cpm\", []);\n\n// Borrar datos de zonas radiológicas o círculos concéntricos\nglobal.set(\"datos_zonas\", []);\n\n// Borrar datos de circulos concéntricos\nglobal.set(\"historial\", []);\n\n// Enviar tabla vacía al dashboard\nmsg.payload = [];\n\n// Opcional: podrías enviar también un mensaje especial a otros nodos si se requiere\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c30d7906b353534",
+        "type": "mqtt in",
+        "z": "f39f807af33cc2fa",
+        "name": "",
+        "topic": "dispositivos/ESP/datos",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "ddd9310febe2f04f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 840,
+        "wires": [
+            [
+                "f49592c5a689c91c",
+                "15ef267a347ea1eb"
+            ]
+        ]
+    },
+    {
+        "id": "f49592c5a689c91c",
+        "type": "function",
+        "z": "f39f807af33cc2fa",
+        "name": "function 2",
+        "func": "// Node-RED Function: Altitud\n// Extrae ALT del payload: todo:LAT,LON,CPM,ALT,SAT,DATE=...,TIME=...,SEQ=...\nlet raw = msg.payload;\nif (raw == null) return null;\nraw = (typeof raw === \"string\") ? raw : (raw && raw.toString ? raw.toString() : String(raw));\nraw = raw.trim();\n\n// match primeros 5 campos, ignorando lo demas\nconst m = raw.match(/^(?:todo:)?([^,]+),([^,]+),([^,]+),([^,]+),([^,]+)/);\nif (!m) { node.warn(\"Altitud: formato invalido: \" + raw); return null; }\n\nconst alt = parseFloat(m[4]);\nif (!Number.isFinite(alt)) { node.warn(\"Altitud NaN: \" + m[4]); return null; }\n\nmsg.payload = alt;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 840,
+        "wires": [
+            [
+                "38d6e970e6317eb0"
+            ]
+        ]
+    },
+    {
+        "id": "38d6e970e6317eb0",
+        "type": "ui_text",
+        "z": "f39f807af33cc2fa",
+        "group": "bc3449d131ea9cbc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Alt",
+        "label": "Altitud (MSNM): ",
+        "format": "{{msg.payload}} m",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 670,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d00ff358ed507b44",
+        "type": "function",
+        "z": "f39f807af33cc2fa",
+        "name": "Toma hora",
+        "func": "let raw = msg.payload;\nif (Buffer.isBuffer(raw)) raw = raw.toString();\nif (typeof raw !== \"string\") return null;\nif (raw.startsWith(\"todo:\")) raw = raw.slice(5);\nraw = raw.split(\";CRC=\")[0];\n\nlet fechaStr = raw.split(\",\").find(p => p.startsWith(\"DATE=\"));\nlet horaStr  = raw.split(\",\").find(p => p.startsWith(\"TIME=\"));\n\nif (!fechaStr || !horaStr) return null;\n\nlet fecha = fechaStr.replace(\"DATE=\",\"\");\nlet hora  = horaStr.replace(\"TIME=\",\"\");\n\nmsg.payload = `${fecha} - ${hora}`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 640,
+        "wires": [
+            [
+                "e8a11db6cf7a25b1"
+            ]
+        ]
+    },
+    {
+        "id": "e8a11db6cf7a25b1",
+        "type": "ui_text",
+        "z": "f39f807af33cc2fa",
+        "group": "bc3449d131ea9cbc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Fecha Hora",
+        "label": "Fecha y hora de inicio:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 730,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d6983f4d6a547704",
+        "type": "ui_text",
+        "z": "f39f807af33cc2fa",
+        "group": "bc3449d131ea9cbc",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Sat",
+        "label": "Satelites disponibles: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 670,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "15ef267a347ea1eb",
+        "type": "function",
+        "z": "f39f807af33cc2fa",
+        "name": "function 3",
+        "func": "// Node-RED Function: Satelites\n// Extrae SAT del payload: todo:LAT,LON,CPM,ALT,SAT,DATE=...,TIME=...,SEQ=...\nlet raw = msg.payload;\nif (raw == null) return null;\nraw = (typeof raw === \"string\") ? raw : (raw && raw.toString ? raw.toString() : String(raw));\nraw = raw.trim();\n\nconst m = raw.match(/^(?:todo:)?([^,]+),([^,]+),([^,]+),([^,]+),([^,]+)/);\nif (!m) { node.warn(\"Satelites: formato invalido: \" + raw); return null; }\n\nconst sat = parseInt(m[5], 10);\nif (!Number.isFinite(sat)) { node.warn(\"Satelites NaN: \" + m[5]); return null; }\n\nmsg.payload = sat;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 900,
+        "wires": [
+            [
+                "d6983f4d6a547704"
+            ]
+        ]
+    },
+    {
+        "id": "dc06886c6851352a",
+        "type": "link out",
+        "z": "f39f807af33cc2fa",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [],
+        "x": 435,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "77bb99afd28bb2b3",
+        "type": "mqtt in",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "topic": "dispositivos/ESP/datos",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "ddd9310febe2f04f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "ef9b2637a12fffdb",
+                "2eb6a32b6343bd33",
+                "661d3262cf29a8df",
+                "122b6f88dce8dfce",
+                "f5a32b393d10c386",
+                "efc560ff74a56307"
+            ]
+        ]
+    },
+    {
+        "id": "f5a32b393d10c386",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Marcado en Mapa",
+        "func": "// payload puede venir como:\n//   \"todo:lat,lon,cpm,alt,sat,SEQ=NN;CRC=XXXX\"\n// o como \"lat,lon,cpm,alt,sat\"\n// no usa tildes\n\nfunction normalize(raw) {\n    if (Buffer.isBuffer(raw)) raw = raw.toString();\n    if (typeof raw !== \"string\") return null;\n    raw = raw.trim();\n\n    // descartar CRC\n    let body = raw.split(\";CRC=\")[0];\n\n    // quitar prefijo \"todo:\"\n    if (body.startsWith(\"todo:\")) body = body.slice(5);\n\n    // eliminar campo SEQ si existe\n    let parts = body.split(\",\").filter(s => !/^SEQ=/i.test(String(s).trim()));\n    if (parts.length < 5) return null;\n    return parts.slice(0, 5); // [lat,lon,cpm,alt,sat]\n}\n\nlet parts = normalize(msg.payload);\nif (!parts) return null;\n\nlet lat = parseFloat(parts[0]);\nlet lon = parseFloat(parts[1]);\nlet cpm = parseInt(parts[2], 10);\nlet alt = parseFloat(parts[3]);\nlet sat = parseInt(parts[4], 10);\n\nif ([lat, lon, cpm, alt, sat].some(v => Number.isNaN(v))) return null;\n\n// nivel por CPM\nlet nivel = \"00\";\nif (cpm >= 5 && cpm <= 150) nivel = \"01\";\nelse if (cpm <= 500) nivel = \"02\";\nelse if (cpm <= 1500) nivel = \"03\";\nelse if (cpm <= 6000) nivel = \"04\";\nelse if (cpm <= 15000) nivel = \"05\";\n\n// colores\nlet color = \"gray\", fillColor = \"#cccccc\", fillOpacity = 0.05;\nswitch (nivel) {\n    case \"01\": color = \"green\"; fillColor = \"#a0f0a0\"; fillOpacity = 0.20; break;\n    case \"02\": color = \"yellow\"; fillColor = \"#ffff99\"; fillOpacity = 0.30; break;\n    case \"03\": color = \"orange\"; fillColor = \"#ffd966\"; fillOpacity = 0.40; break;\n    case \"04\": color = \"red\"; fillColor = \"#ff9999\"; fillOpacity = 0.50; break;\n    case \"05\": color = \"purple\"; fillColor = \"#d19fe8\"; fillOpacity = 0.60; break;\n}\n\n// nota: mantengo tu factor de texto de referencia (151) solo para mostrar\nlet sievert = Math.round((cpm / 151) * 100) / 100;\n\nlet hora = new Date().toTimeString().split(\" \")[0];\nlet texto =\n    \"Hora: \" + hora +\n    \"\\t CPM: \" + cpm +\n    \"\\t Nivel: \" + nivel +\n    \"\\nLat/Lon: \" + lat + \"/\" + lon +\n    \"\\nAlt: \" + alt + \" m Sat: \" + sat +\n    \"\\nDose: \" + sievert + \" uSv/h\";\n\nlet id = \"punto_\" + Date.now();\n\nlet marcador = {\n    name: id,\n    lat, lon,\n    layer: \"tiemporeal\",\n    icon: \"fa-map-marker\",\n    iconColor: color,\n    markerSize: \"small\",\n    color, fillColor, fillOpacity,\n    radius: 5,\n    stroke: false,\n    popup: texto\n};\n\n// historial acumulado\nlet historial = global.get(\"puntos\") || [];\nhistorial.push(marcador);\nglobal.set(\"puntos\", historial);\n\n// enviar todos los puntos acumulados (como ya hacias)\nreturn [{ payload: historial }];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "da16217095daccd6"
+            ]
+        ]
+    },
+    {
+        "id": "c76820478ba89c05",
+        "type": "ui_gauge",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "group": "9a92d61570eaea2b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Intensidad",
+        "label": "Nivel",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#00b500",
+            "#e2e600",
+            "#e60a2b"
+        ],
+        "seg1": "#cccccc",
+        "seg2": "#a0f0a0",
+        "diff": false,
+        "className": "",
+        "x": 670,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "bb29c6e5fa732d05",
+        "type": "ui_chart",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "group": "9a92d61570eaea2b",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "label": "Gráfica de Dosis",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 690,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef9b2637a12fffdb",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Intensidad",
+        "func": "// no usa tildes\nfunction normalize(raw) {\n    if (Buffer.isBuffer(raw)) raw = raw.toString();\n    if (typeof raw !== \"string\") return null;\n    let body = raw.split(\";CRC=\")[0];\n    if (body.startsWith(\"todo:\")) body = body.slice(5);\n    let p = body.split(\",\").filter(s => !/^SEQ=/i.test(String(s).trim()));\n    if (p.length < 3) return null;\n    return p;\n}\nlet partes = normalize(msg.payload);\nif (!partes) return null;\n\nlet cpm = parseInt(partes[2].trim(), 10);\nif (isNaN(cpm)) return null;\n\nlet intensidad = 0;\nif (cpm >= 5 && cpm <= 150) intensidad = 1;\nelse if (cpm <= 500) intensidad = 2;\nelse if (cpm <= 1500) intensidad = 3;\nelse if (cpm <= 6000) intensidad = 4;\nelse if (cpm <= 15000) intensidad = 5;\n\nmsg.payload = intensidad;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 260,
+        "wires": [
+            [
+                "c76820478ba89c05"
+            ]
+        ]
+    },
+    {
+        "id": "2eb6a32b6343bd33",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Obtener URL",
+        "func": "// no usa tildes\nfunction normalize(raw) {\n    if (Buffer.isBuffer(raw)) raw = raw.toString();\n    if (typeof raw !== \"string\") return null;\n    let body = raw.split(\";CRC=\")[0];\n    if (body.startsWith(\"todo:\")) body = body.slice(5);\n    let p = body.split(\",\").filter(s => !/^SEQ=/i.test(String(s).trim()));\n    if (p.length < 2) return null;\n    return p;\n}\nlet coords = normalize(msg.payload);\nif (!coords) { node.error(\"coordenadas invalidas\"); return null; }\n\nlet lat = String(coords[0]).trim();\nlet lon = String(coords[1]).trim();\n\nmsg.method = \"GET\";\nmsg.url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 760,
+        "wires": [
+            [
+                "7befcf1469d72a93"
+            ]
+        ]
+    },
+    {
+        "id": "68952c1bf3021a98",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Extraer display_name",
+        "func": "if (msg.payload && msg.payload.display_name) {\n let direccion = msg.payload.display_name;\n\n // Guardar en variable global\n global.set(\"ultima_direccion\", direccion);\n\n // Enviar como payload para nodo siguiente\n msg.payload = direccion;\n} else {\n msg.payload = \"Dirección no disponible\";\n\n // Borrar valor anterior en caso de error\n global.set(\"ultima_direccion\", null);\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 760,
+        "wires": [
+            [
+                "d3b42f53192e5bc7"
+            ]
+        ]
+    },
+    {
+        "id": "d3b42f53192e5bc7",
+        "type": "ui_text",
+        "z": "200d5289ba083f9b",
+        "group": "f60a2e206e02e3b2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Dirección",
+        "label": "Dirección actual: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1120,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "7befcf1469d72a93",
+        "type": "http request",
+        "z": "200d5289ba083f9b",
+        "name": "Consulta Nominatim",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 660,
+        "y": 760,
+        "wires": [
+            [
+                "68952c1bf3021a98"
+            ]
+        ]
+    },
+    {
+        "id": "661d3262cf29a8df",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "CPM",
+        "func": "// no usa tildes\nfunction normalize(raw){\n  if (Buffer.isBuffer(raw)) raw = raw.toString();\n  if (typeof raw !== \"string\") return null;\n  let body = raw.split(\";CRC=\")[0];\n  if (body.startsWith(\"todo:\")) body = body.slice(5);\n  let p = body.split(\",\").filter(s => !/^SEQ=/i.test(String(s).trim()));\n  if (p.length < 3) return null;\n  return p;\n}\nlet p = normalize(msg.payload);\nif (!p) return null;\n\nlet cpm = parseInt(String(p[2]).trim(), 10);\nif (isNaN(cpm)) return null;\n\nmsg.payload = cpm;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "a278a9ee1e488d8d"
+            ]
+        ]
+    },
+    {
+        "id": "a278a9ee1e488d8d",
+        "type": "ui_numeric",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "label": "Tasa de Detección (CPM)",
+        "tooltip": "",
+        "group": "9a92d61570eaea2b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "15000",
+        "step": 1,
+        "className": "",
+        "x": 710,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "122b6f88dce8dfce",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Sieverts/h",
+        "func": "// no usa tildes\nfunction normalize(raw) {\n    if (Buffer.isBuffer(raw)) raw = raw.toString();\n    if (typeof raw !== \"string\") return null;\n    let body = raw.split(\";CRC=\")[0];\n    if (body.startsWith(\"todo:\")) body = body.slice(5);\n    let p = body.split(\",\").filter(s => !/^SEQ=/i.test(String(s).trim()));\n    if (p.length < 3) return null;\n    return p;\n}\nlet p = normalize(msg.payload);\nif (!p) return null;\n\nlet cpm = parseInt(String(p[2]).trim(), 10);\nif (isNaN(cpm)) return null;\n\n// tu nodo usa 328 actualmente; no lo cambio\nlet sievert = cpm / 328;\nsievert = Math.round(sievert * 100) / 100;\n\nmsg.payload = sievert;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "1d9a1acf3f5ba502",
+                "bb29c6e5fa732d05"
+            ]
+        ]
+    },
+    {
+        "id": "1d9a1acf3f5ba502",
+        "type": "ui_numeric",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "label": "Tasa de Dosis (μSv/h)",
+        "tooltip": "",
+        "group": "9a92d61570eaea2b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "15000",
+        "step": "0,001",
+        "className": "",
+        "x": 700,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ebe25dfd3653ee3",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Interpolación",
+        "func": "let tiemporeal = global.get(\"tiemporeal\") || [];\n\nlet marcadoresRealtime = tiemporeal.map((p, i) => {\n let nivel = \"00\";\n let color = \"gray\";\n let fillColor = \"#cccccc\";\n let fillOpacity = 0.10;\n\n if (p.cpm >= 5 && p.cpm <= 150) {\n nivel = \"01\"; color = \"green\"; fillColor = \"#a0f0a0\"; fillOpacity = 0.20;\n } else if (p.cpm <= 500) {\n nivel = \"02\"; color = \"yellow\"; fillColor = \"#ffff99\"; fillOpacity = 0.30;\n } else if (p.cpm <= 1500) {\n nivel = \"03\"; color = \"orange\"; fillColor = \"#ffd966\"; fillOpacity = 0.40;\n } else if (p.cpm <= 6000) {\n nivel = \"04\"; color = \"red\"; fillColor = \"#ff9999\"; fillOpacity = 0.50;\n } else if (p.cpm <= 15000) {\n nivel = \"05\"; color = \"purple\"; fillColor = \"#d19fe8\"; fillOpacity = 0.60;\n }\n\n let hora = new Date().toTimeString().split(' ')[0];\n let texto = Hora: ${hora}<br>CPM: ${p.cpm}<br>Nivel: ${nivel}<br>Lat/Lon: ${p.lat}/${p.lon}<br>Dosis: ${p.dosis || 0} µSv/h;\n\n return {\n name: TiempoReal_${i},\n lat: p.lat,\n lon: p.lon,\n layer: \"tiemporeal\",\n icon: \"fa-map-marker\",\n iconColor: color,\n markerSize: \"small\",\n color: color,\n fillColor: fillColor,\n fillOpacity: fillOpacity,\n radius: 5,\n stroke: false,\n popup: texto\n };\n});\n\nglobal.set(\"tiemporeal\", marcadoresRealtime);\n\nreturn { payload: marcadoresRealtime };\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 480,
+        "wires": [
+            [
+                "da16217095daccd6"
+            ]
+        ]
+    },
+    {
+        "id": "af344f03deeadd04",
+        "type": "trigger",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "15",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 630,
+        "y": 480,
+        "wires": [
+            [
+                "5ebe25dfd3653ee3"
+            ]
+        ]
+    },
+    {
+        "id": "a44a5b6391ae43ae",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Circulos",
+        "func": "// Zonas concetricas por niveles usando puntos historicos\n// Origen preferido: global.tabla_datos (Latitud, Longitud, CPM)\n// Alternativa: global.historial con campos lat, lon, cpm\n// No usa tildes\n\nfunction haversine(lat1, lon1, lat2, lon2) {\n const R = 6371000;\n const toRad = deg => deg * Math.PI / 180;\n const dLat = toRad(lat2 - lat1);\n const dLon = toRad(lon2 - lon1);\n const a = Math.sin(dLat / 2) ** 2 +\n Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *\n Math.sin(dLon / 2) ** 2;\n const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));\n return R * c;\n}\n\n// 1) Normalizar datos a {lat, lon, cpm}\nlet puntos = [];\n\n// preferir tabla_datos\nlet tabla = global.get(\"tabla_datos\");\nif (Array.isArray(tabla) && tabla.length > 0) {\n puntos = tabla.map(r => ({\n lat: typeof r.Latitud === \"string\" ? parseFloat(r.Latitud) : r.Latitud,\n lon: typeof r.Longitud === \"string\" ? parseFloat(r.Longitud) : r.Longitud,\n cpm: typeof r.CPM === \"string\" ? parseInt(r.CPM, 10) : r.CPM\n })).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lon) && Number.isFinite(p.cpm));\n}\n\n// fallback a historial\nif (puntos.length === 0) {\n let historial = global.get(\"historial\") || [];\n if (Array.isArray(historial) && historial.length > 0) {\n puntos = historial.map(p => ({\n lat: typeof p.lat === \"string\" ? parseFloat(p.lat) : p.lat,\n lon: typeof p.lon === \"string\" ? parseFloat(p.lon) : p.lon,\n cpm: typeof p.cpm === \"string\" ? parseInt(p.cpm, 10) : p.cpm\n })).filter(p => Number.isFinite(p.lat) && Number.isFinite(p.lon) && Number.isFinite(p.cpm));\n }\n}\n\n// validar\nif (puntos.length === 0) return null;\n\n// 2) Punto de CPM maximo\nlet puntoMax = puntos.reduce((max, p) => (p.cpm > max.cpm ? p : max), puntos[0]);\n\n// 3) Calcular radios por nivel\nconst colormap = {\n 1: \"#ADFF2F\", // verde\n 2: \"#FFFF00\", // amarillo\n 3: \"#FFA500\", // naranja\n 4: \"#FF4500\", // rojo\n 5: \"#800080\" // morado\n};\n\nlet radios = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };\n\n// niveles 2..5 por rangos\nconst minByN = { 2: 151, 3: 501, 4: 1501, 5: 6001 };\nconst maxByN = { 2: 500, 3: 1500, 4: 6000, 5: 15000 };\n\nfor (let n = 2; n <= 5; n++) {\n const minCPM = minByN[n];\n const maxCPM = maxByN[n];\n const candidatos = puntos.filter(p => p.cpm >= minCPM && p.cpm <= maxCPM && p.cpm < puntoMax.cpm);\n if (candidatos.length > 0) {\n const puntoCercano = candidatos.reduce((min, p) => {\n const d = haversine(puntoMax.lat, puntoMax.lon, p.lat, p.lon);\n return d < min.dist ? { lat: p.lat, lon: p.lon, dist: d } : min;\n }, { dist: Infinity, lat: null, lon: null });\n radios[n] = (puntoCercano.dist === Infinity ? 0 : (puntoCercano.dist + 1));\n } else {\n radios[n] = 0;\n }\n}\n\n// nivel 1: buscar cpm inmediatamente mayor a 150 y menor que el max\nconst candVerde = puntos.filter(p => p.cpm > 150 && p.cpm < puntoMax.cpm);\nif (candVerde.length > 0) {\n const puntoVerde = candVerde.reduce((min, p) => {\n const d = haversine(puntoMax.lat, puntoMax.lon, p.lat, p.lon);\n return d < min.dist ? { lat: p.lat, lon: p.lon, dist: d } : min;\n }, { dist: Infinity, lat: null, lon: null });\n radios[1] = (puntoVerde.dist === Infinity ? 15 : (puntoVerde.dist + 10));\n} else {\n radios[1] = 15; // por defecto\n}\n\n// 4) Mensajes: eliminar anteriores y crear nuevos\nlet mensajes = [];\nfor (let n = 1; n <= 5; n++) {\n const id = \"zona_nivel_\" + n;\n\n // eliminar\n mensajes.push({\n payload: {\n name: id,\n _delete: true,\n layer: \"tiemporeal\"\n }\n });\n\n // crear\n if (radios[n] > 0) {\n mensajes.push({\n payload: {\n name: id,\n lat: puntoMax.lat,\n lon: puntoMax.lon,\n radius: radios[n],\n color: colormap[n],\n fillColor: colormap[n],\n fillOpacity: 0.25,\n stroke: true,\n layer: \"tiemporeal\",\n popup: \"Zona Nivel \" + n + \" (r=\" + Math.round(radios[n]) + \" m)\"\n }\n });\n }\n}\n\nreturn [mensajes];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 400,
+        "wires": [
+            [
+                "da16217095daccd6"
+            ]
+        ]
+    },
+    {
+        "id": "71b5b62bb9f98bac",
+        "type": "ui_button",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "group": "f60a2e206e02e3b2",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "VER ZONAS DE EXCLUSION",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "a44a5b6391ae43ae"
+            ]
+        ]
+    },
+    {
+        "id": "da16217095daccd6",
+        "type": "ui_worldmap",
+        "z": "200d5289ba083f9b",
+        "group": "f60a2e206e02e3b2",
+        "order": 2,
+        "width": 14,
+        "height": 9,
+        "name": "Mapa Presente",
+        "lat": "",
+        "lon": "",
+        "zoom": "20",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "show",
+        "panit": "true",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap_real",
+        "overlist": "DR,CO,DN,HM",
+        "maplist": "OSMG,OSMC",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1040,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "54e685cdf2af6357",
+        "type": "link in",
+        "z": "200d5289ba083f9b",
+        "name": "link in 1",
+        "links": [
+            "dc06886c6851352a"
+        ],
+        "x": 255,
+        "y": 520,
+        "wires": [
+            [
+                "39a974409f43a2c4"
+            ]
+        ]
+    },
+    {
+        "id": "39a974409f43a2c4",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "ResetDatos",
+        "func": "// Reset de mapa, graficas y numericos\n// No usa tildes\n\n// 1) limpiar estados globales\nglobal.set(\"puntos\", []);\nglobal.set(\"tiemporeal\", []);\nglobal.set(\"tabla_datos\", []);\nglobal.set(\"historial\", []);\nglobal.set(\"ultima_direccion\", null);\n\n// resetear objeto dose_info global (opcional, util si lo usas en otros nodos)\nglobal.set(\"dose_info\", {\n cpm: 0,\n rate_uSv_h: 0,\n dt_s: 0,\n inc_uSv: 0,\n dose_uSv: 0\n});\n\n// 2) preparar mensajes para el worldmap\nlet wmMsgs = [];\n\n// limpiar capa completa \"tiemporeal\"\nwmMsgs.push({\n payload: {\n layer: \"tiemporeal\",\n command: { clear: true }\n }\n});\n\n// eliminar zonas de exclusion si existieran\nfor (let n = 1; n <= 5; n++) {\n wmMsgs.push({\n payload: {\n name: \"zona_nivel_\" + n,\n _delete: true,\n layer: \"tiemporeal\"\n }\n });\n}\n\n// 3) preparar resets de widgets\n// chart: limpiar datos\nlet chartMsg = { payload: [] };\n\n// numericos y gauge a cero\nlet cpmMsg = { payload: 0 }; // Tasa de Deteccion (CPM)\nlet doseRateMsg = { payload: 0 }; // Tasa de Dosis (uSv/h)\nlet intenMsg = { payload: 0 }; // Intensidad nivel 0-5\n\n// texto direccion vacio\nlet dirMsg = { payload: \"\" };\n\n// 4) mensaje de reset para el integrador de dosis (debe ir cableado a ese nodo Function)\nlet resetIntegratorMsg = { reset: true };\n\n// 5) enviar a 7 salidas en el orden indicado\n// [0] worldmap msgs (array), [1] chart, [2] cpm, [3] dose rate, [4] intensidad, [5] direccion, [6] reset integrador\nreturn [ wmMsgs, chartMsg, cpmMsg, doseRateMsg, intenMsg, dirMsg, resetIntegratorMsg ];\n",
+        "outputs": 7,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 560,
+        "wires": [
+            [
+                "da16217095daccd6"
+            ],
+            [
+                "bb29c6e5fa732d05"
+            ],
+            [
+                "a278a9ee1e488d8d"
+            ],
+            [
+                "1d9a1acf3f5ba502"
+            ],
+            [
+                "c76820478ba89c05"
+            ],
+            [
+                "d3b42f53192e5bc7"
+            ],
+            [
+                "efc560ff74a56307"
+            ]
+        ]
+    },
+    {
+        "id": "efc560ff74a56307",
+        "type": "function",
+        "z": "200d5289ba083f9b",
+        "name": "Sieverts",
+        "func": "// integrador de dosis en uSv\n// no usa tildes\n\nconst CPM_TO_uSv_per_h = 1 / 328; // mantengo tu factor actual\nconst FALLBACK_PERIOD_S = 15;\nconst MIN_DT_S = 1;\nconst MAX_DT_S = 60;\n\nif (msg.reset === true) {\n    context.set('dose_uSv', 0);\n    context.set('last_ts', Date.now());\n    msg.payload = 0;\n    msg.dose_info = { cpm: 0, rate_uSv_h: 0, dt_s: 0, inc_uSv: 0, dose_uSv: 0 };\n    return msg;\n}\n\nfunction normalize(raw) {\n    if (Buffer.isBuffer(raw)) raw = raw.toString();\n    if (typeof raw !== \"string\") return null;\n    let body = raw.split(\";CRC=\")[0];\n    if (body.startsWith(\"todo:\")) body = body.slice(5);\n    let p = body.split(\",\").filter(s => !/^SEQ=/i.test(String(s).trim()));\n    if (p.length < 3) return null;\n    return p;\n}\nlet partes = normalize(msg.payload);\nif (!partes) return null;\n\nlet cpm = parseInt(String(partes[2]).trim(), 10);\nif (isNaN(cpm)) return null;\n\n// tasa instantanea\nlet rate_uSv_h = cpm * CPM_TO_uSv_per_h;\n\n// delta t\nlet now = Date.now();\nlet last_ts = context.get('last_ts');\nlet dt_s;\n\nif (typeof last_ts === 'number') {\n    dt_s = (now - last_ts) / 1000;\n    if (dt_s < MIN_DT_S || dt_s > MAX_DT_S) dt_s = FALLBACK_PERIOD_S;\n} else {\n    context.set('last_ts', now);\n    msg.payload = Number(0);\n    return msg;\n}\n\n// integracion\nlet dt_h = dt_s / 3600;\nlet inc_uSv = rate_uSv_h * dt_h;\n\nlet dose_uSv = context.get('dose_uSv') || 0;\ndose_uSv += inc_uSv;\n\ncontext.set('dose_uSv', dose_uSv);\ncontext.set('last_ts', now);\n\nmsg.payload = Number(dose_uSv.toFixed(3));\nmsg.dose_info = {\n    cpm: cpm,\n    rate_uSv_h: Number(rate_uSv_h.toFixed(3)),\n    dt_s: Math.round(dt_s),\n    inc_uSv: Number(inc_uSv.toFixed(5)),\n    dose_uSv: Number(dose_uSv.toFixed(3))\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "30a80abc2b54e756"
+            ]
+        ]
+    },
+    {
+        "id": "30a80abc2b54e756",
+        "type": "ui_numeric",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "label": "Dosis Acumulada (uSv)",
+        "tooltip": "",
+        "group": "9a92d61570eaea2b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "15000",
+        "step": "0,001",
+        "className": "",
+        "x": 710,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1ab672aaa5fe926",
+        "type": "ui_button",
+        "z": "200d5289ba083f9b",
+        "name": "",
+        "group": "f60a2e206e02e3b2",
+        "order": 4,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "label": "RESETEAR TODO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "39a974409f43a2c4"
+            ]
+        ]
+    },
+    {
+        "id": "9ec25c1c6e8b09a0",
+        "type": "mqtt in",
+        "z": "e62d6a784aec6957",
+        "name": "",
+        "topic": "dispositivos/ESP/datos",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "ddd9310febe2f04f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "eff9062bfd6d62c4"
+            ]
+        ]
+    },
+    {
+        "id": "eff9062bfd6d62c4",
+        "type": "function",
+        "z": "e62d6a784aec6957",
+        "name": "Global: tabla_datos",
+        "func": "// payload ejemplo: lat,lon,cpm,alt,sat,DATE=2025-09-15,TIME=23:45:10,SEQ=01\n\nlet texto = msg.payload;\nif (Buffer.isBuffer(texto)) texto = texto.toString();\nif (typeof texto !== \"string\") return null;\n\n// tolerar prefijo \"todo:\"\nif (texto.startsWith(\"todo:\")) texto = texto.slice(5);\n\n// quitar CRC si existe\ntexto = texto.split(\";CRC=\")[0];\n\nlet partes = texto.split(\",\");\nif (partes.length < 5) return null;\n\nlet lat = parseFloat(partes[0]);\nlet lon = parseFloat(partes[1]);\nlet cpm = parseInt(partes[2], 10);\nlet alt = parseFloat(partes[3]);\nlet sat = parseInt(partes[4], 10);\n\n// buscar DATE y TIME\nlet fechaStr = partes.find(p => p.startsWith(\"DATE=\"));\nlet horaStr  = partes.find(p => p.startsWith(\"TIME=\"));\n\nlet año=0, mes=0, dia=0, hora=0, minuto=0, segundo=0;\nif (fechaStr) {\n    let [Y,M,D] = fechaStr.replace(\"DATE=\",\"\").split(\"-\");\n    año = parseInt(Y); mes = parseInt(M); dia = parseInt(D);\n}\nif (horaStr) {\n    let [h,m,s] = horaStr.replace(\"TIME=\",\"\").split(\":\");\n    hora = parseInt(h); minuto = parseInt(m); segundo = parseInt(s);\n}\n\n// determinar intensidad\nlet intensidad = 0;\nif (cpm >= 5 && cpm <= 150) intensidad = 1;\nelse if (cpm <= 500) intensidad = 2;\nelse if (cpm <= 1500) intensidad = 3;\nelse if (cpm <= 6000) intensidad = 4;\nelse if (cpm <= 15000) intensidad = 5;\n\n// calcular dosis en uSv/h\nlet sievert = Math.round((cpm / 151) * 100) / 100;\n\n// tabla existente\nlet tabla = global.get(\"tabla_datos\") || [];\nlet lecturaNum = (tabla.length + 1).toString().padStart(4, \"0\");\n\nlet fila = {\n    Registro: lecturaNum,\n    Ano: año,\n    Mes: mes,\n    Dia: dia,\n    Hora: hora,\n    Minuto: minuto,\n    Segundo: segundo,\n    Latitud: lat,\n    Longitud: lon,\n    Intensidad: intensidad,\n    CPM: cpm,\n    D_uSv_h: sievert\n};\n\ntabla.push(fila);\nglobal.set(\"tabla_datos\", tabla);\n\nmsg.payload = tabla;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8dc0c6b8204817c9",
+        "type": "ui_button",
+        "z": "e62d6a784aec6957",
+        "name": "",
+        "group": "7d54a558ac6792b0",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "BORRAR TABLA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "72e9244d3f1a1dc9",
+                "8c8e3d4257b68ad5"
+            ]
+        ]
+    },
+    {
+        "id": "72e9244d3f1a1dc9",
+        "type": "function",
+        "z": "e62d6a784aec6957",
+        "name": "Borra tabla_datos",
+        "func": "// Borrar datos\nglobal.set(\"tabla_datos\", []);\n\n// Enviar tabla vacía al dashboard\nmsg.payload = [];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "2c053d95aa35c07e"
+            ]
+        ]
+    },
+    {
+        "id": "296b25a5f91502cf",
+        "type": "ui_button",
+        "z": "e62d6a784aec6957",
+        "name": "",
+        "group": "7d54a558ac6792b0",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "ACTUALIZAR TABLA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "2966e4a916bcf7b5",
+                "e3a3073a945eec9d"
+            ]
+        ]
+    },
+    {
+        "id": "2966e4a916bcf7b5",
+        "type": "function",
+        "z": "e62d6a784aec6957",
+        "name": "Lee tabla_datos",
+        "func": "let tabla = global.get(\"tabla_datos\") || [];\n\n// Enviar los datos en orden de más reciente a más antiguo\nmsg.payload = [...tabla].reverse();\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 220,
+        "wires": [
+            [
+                "2c053d95aa35c07e"
+            ]
+        ]
+    },
+    {
+        "id": "ade84ede542d8305",
+        "type": "ui_button",
+        "z": "e62d6a784aec6957",
+        "name": "",
+        "group": "7d54a558ac6792b0",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "EXPORTAR A CSV",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 460,
+        "wires": [
+            [
+                "a69e2fe3c3fb0d32",
+                "f91029deba3f8fb0"
+            ]
+        ]
+    },
+    {
+        "id": "f9eb30265b8df48a",
+        "type": "file",
+        "z": "e62d6a784aec6957",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 680,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a69e2fe3c3fb0d32",
+        "type": "ui_toast",
+        "z": "e62d6a784aec6957",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "CSV exportado correctamente. Ruta: /home/itoroc/Database",
+        "name": "Notificación",
+        "x": 450,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e3a3073a945eec9d",
+        "type": "ui_toast",
+        "z": "e62d6a784aec6957",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Datos de la tabla actualizados.",
+        "name": "Notificación",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8c8e3d4257b68ad5",
+        "type": "ui_toast",
+        "z": "e62d6a784aec6957",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Datos de la tabla eliminados.",
+        "name": "Notificación",
+        "x": 450,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f91029deba3f8fb0",
+        "type": "function",
+        "z": "e62d6a784aec6957",
+        "name": "Exporta tabla_datos",
+        "func": "// Exporta tabla_datos a CSV en /home/itoroc/Database\n// No usa tildes\n\nlet tabla = global.get(\"tabla_datos\") || [];\nlet operacion = (global.get(\"operacion\") || \"SinNombre\") + \"\";\n\n// sanitizar nombre de operacion\nlet operacionNombre = operacion.replace(/\\s+/g, \"_\").replace(/[^\\w\\-.]/g, \"_\");\n\n// fecha YYYYMMDD\nlet ahora = new Date();\nlet yyyy = ahora.getFullYear();\nlet mm = String(ahora.getMonth() + 1).padStart(2, \"0\");\nlet dd = String(ahora.getDate()).padStart(2, \"0\");\nlet fecha = \"\" + yyyy + mm + dd;\n\n// nombre y ruta\nlet nombreArchivo = fecha + \"_\" + operacionNombre + \".csv\";\nlet rutaCompleta = \"/home/itoroc/Database/\" + nombreArchivo;\n\n// columnas fijas (orden estable)\nlet columnas = [\n    \"Registro\", \"Ano\", \"Mes\", \"Dia\", \"Hora\", \"Minuto\", \"Segundo\",\n    \"Latitud\", \"Longitud\", \"Intensidad\", \"CPM\", \"D_uSv_h\"\n];\n\n// construir CSV\nlet encabezado = columnas.join(\",\") + \"\\n\";\nlet contenido = \"\";\nif (Array.isArray(tabla) && tabla.length > 0) {\n    contenido = tabla.map(f => columnas.map(k => (k in f ? f[k] : \"\")).join(\",\")).join(\"\\n\");\n}\n\nmsg.payload = encabezado + contenido;\nmsg.filename = rutaCompleta;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 460,
+        "wires": [
+            [
+                "f9eb30265b8df48a"
+            ]
+        ]
+    },
+    {
+        "id": "2c053d95aa35c07e",
+        "type": "ui_table",
+        "z": "e62d6a784aec6957",
+        "group": "7d54a558ac6792b0",
+        "name": "TablaPresente",
+        "order": 1,
+        "width": 22,
+        "height": 10,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 680,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4f95cbc3d0b1930a",
+        "type": "ui_template",
+        "z": "c5e8c60895513477",
+        "group": "4c2af0f66e13d282",
+        "name": "",
+        "order": 1,
+        "width": 22,
+        "height": 10,
+        "format": "<div>\n    <iframe id=\"map_iframe\" src=\"/mapa_zonas.html\" width=\"100%\" height=\"500\" frameborder=\"0\"\n        style=\"border:1px solid #ccc; border-radius:8px;\"></iframe>\n</div>\n<script>\n    // No usa tildes\n(function(scope){\n  scope.$watch('msg', function(m){\n    if(!m) return;\n    var el = document.getElementById('map_iframe');\n    if(!el) return;\n    // forzar recarga sin cambiar el template\n    var base = \"/mapa_zonas.html\";\n    el.src = base + \"?v=\" + Date.now();\n  });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1340,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac4cbc7a9583c4dc",
+        "type": "ui_button",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "group": "4c2af0f66e13d282",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "CONCÉNTRICO",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "b8eb823ef2dca03d",
+                "d5a6b8651e5504eb"
+            ]
+        ]
+    },
+    {
+        "id": "b8eb823ef2dca03d",
+        "type": "ui_toast",
+        "z": "c5e8c60895513477",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Mapa de Zonas de Exclusión cargado correctamente.",
+        "name": "Notificación",
+        "x": 350,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a0545441b33773f0",
+        "type": "file",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "e78037bd82933aec"
+            ]
+        ]
+    },
+    {
+        "id": "d5a6b8651e5504eb",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "Exporta tabla_datos",
+        "func": "// Construye /home/itoroc/Database/YYYYMMDD_Actual.csv desde global.tabla_datos\n// No usa tildes\n\nlet tabla = global.get(\"tabla_datos\") || [];\nif (!Array.isArray(tabla) || tabla.length === 0) {\n    node.warn(\"tabla_datos vacia\");\n    return null;\n}\n\nlet headers = Object.keys(tabla[0]);\nlet encabezado = headers.join(\",\") + \"\\n\";\nlet lineas = tabla.map(row => headers.map(k => row[k]).join(\",\")).join(\"\\n\");\n\nmsg.payload = encabezado + lineas;\n\n// nombre con fecha\nlet ahora = new Date();\nlet yyyy = ahora.getFullYear();\nlet mm = String(ahora.getMonth() + 1).padStart(2, \"0\");\nlet dd = String(ahora.getDate()).padStart(2, \"0\");\nlet fecha = \"\" + yyyy + mm + dd;\n\nmsg.filename = \"/home/itoroc/Database/\" + fecha + \"_Actual.csv\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 360,
+        "wires": [
+            [
+                "a0545441b33773f0"
+            ]
+        ]
+    },
+    {
+        "id": "e78037bd82933aec",
+        "type": "exec",
+        "z": "c5e8c60895513477",
+        "command": "python3 /home/itoroc/zonas/tec01_concentrico.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 890,
+        "y": 360,
+        "wires": [
+            [
+                "47c7b289b56d8afe"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "47c7b289b56d8afe",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "function 4",
+        "func": "// Dispara el refresco del iframe\n// No usa tildes\nmsg.payload = Date.now();\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "4f95cbc3d0b1930a"
+            ]
+        ]
+    },
+    {
+        "id": "3673b8a01bc4e082",
+        "type": "ui_button",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "group": "4c2af0f66e13d282",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "INTERPOLACIÓN IDW",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "0a714452d74aa5b4",
+                "34c3d94a48347861"
+            ]
+        ]
+    },
+    {
+        "id": "0a714452d74aa5b4",
+        "type": "ui_toast",
+        "z": "c5e8c60895513477",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Mapa de Zonas de Exclusión cargado correctamente.",
+        "name": "Notificación",
+        "x": 350,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "74d84d27e67758bb",
+        "type": "file",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 600,
+        "y": 580,
+        "wires": [
+            [
+                "13ee4e10f6d9ddc4"
+            ]
+        ]
+    },
+    {
+        "id": "34c3d94a48347861",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "Exporta tabla_datos2",
+        "func": "// No usa tildes\nlet tabla = global.get(\"tabla_datos\") || [];\nif (!Array.isArray(tabla) || tabla.length === 0) {\n    node.warn(\"tabla_datos vacia\");\n    return null;\n}\n\nlet headers = Object.keys(tabla[0]);\nlet encabezado = headers.join(\",\") + \"\\n\";\nlet lineas = tabla.map(row => headers.map(k => row[k]).join(\",\")).join(\"\\n\");\n\nmsg.payload = encabezado + lineas;\n\nlet ahora = new Date();\nlet yyyy = ahora.getFullYear();\nlet mm = String(ahora.getMonth() + 1).padStart(2, \"0\");\nlet dd = String(ahora.getDate()).padStart(2, \"0\");\nlet fecha = \"\" + yyyy + mm + dd;\n\nmsg.filename = \"/home/itoroc/Database/\" + fecha + \"_Actual.csv\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "74d84d27e67758bb"
+            ]
+        ]
+    },
+    {
+        "id": "13ee4e10f6d9ddc4",
+        "type": "exec",
+        "z": "c5e8c60895513477",
+        "command": "python3 /home/itoroc/zonas/tec02_IDW.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 870,
+        "y": 580,
+        "wires": [
+            [
+                "0f8ecdbff2f9ce99"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0f8ecdbff2f9ce99",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "function 6",
+        "func": "// Dispara el refresco del iframe\n// No usa tildes\nmsg.payload = Date.now();\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 480,
+        "wires": [
+            [
+                "4f95cbc3d0b1930a"
+            ]
+        ]
+    },
+    {
+        "id": "daad5659113bc1c3",
+        "type": "ui_button",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "group": "4c2af0f66e13d282",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "INTERPOLACIÓN RBF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "09b7b74263b9079f",
+                "e227d13d771aa19c",
+                "8d58c33a9f91eebc"
+            ]
+        ]
+    },
+    {
+        "id": "09b7b74263b9079f",
+        "type": "ui_toast",
+        "z": "c5e8c60895513477",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Mapa de Zonas de Exclusión cargado correctamente.",
+        "name": "Notificación",
+        "x": 350,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "5e2022fd57d46115",
+        "type": "file",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 600,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e227d13d771aa19c",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "Exporta tabla_datos3",
+        "func": "// No usa tildes\nlet tabla = global.get(\"tabla_datos\") || [];\nif (!Array.isArray(tabla) || tabla.length === 0) {\n    node.warn(\"tabla_datos vacia\");\n    return null;\n}\n\nlet headers = Object.keys(tabla[0]);\nlet encabezado = headers.join(\",\") + \"\\n\";\nlet lineas = tabla.map(row => headers.map(k => row[k]).join(\",\")).join(\"\\n\");\n\nmsg.payload = encabezado + lineas;\n\nlet ahora = new Date();\nlet yyyy = ahora.getFullYear();\nlet mm = String(ahora.getMonth() + 1).padStart(2, \"0\");\nlet dd = String(ahora.getDate()).padStart(2, \"0\");\nlet fecha = \"\" + yyyy + mm + dd;\n\nmsg.filename = \"/home/itoroc/Database/\" + fecha + \"_Actual.csv\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 780,
+        "wires": [
+            [
+                "5e2022fd57d46115"
+            ]
+        ]
+    },
+    {
+        "id": "8d58c33a9f91eebc",
+        "type": "exec",
+        "z": "c5e8c60895513477",
+        "command": "python3 /home/itoroc/zonas/tec03_RBF.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 870,
+        "y": 860,
+        "wires": [
+            [
+                "21d4d6d3f24b6d0e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "21d4d6d3f24b6d0e",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "function 7",
+        "func": "// Dispara el refresco del iframe\n// No usa tildes\nmsg.payload = Date.now();\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 760,
+        "wires": [
+            [
+                "4f95cbc3d0b1930a"
+            ]
+        ]
+    },
+    {
+        "id": "0d9069f759bb8f89",
+        "type": "ui_button",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "group": "4c2af0f66e13d282",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "TRAYECTORIA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 980,
+        "wires": [
+            [
+                "358f0259ccc212a6",
+                "46e7249c82d5cd74",
+                "7500641285c6e1f8"
+            ]
+        ]
+    },
+    {
+        "id": "358f0259ccc212a6",
+        "type": "ui_toast",
+        "z": "c5e8c60895513477",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Mapa de Zonas de Exclusión cargado correctamente.",
+        "name": "Notificación",
+        "x": 350,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "f5919a3e2f538f84",
+        "type": "file",
+        "z": "c5e8c60895513477",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 600,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46e7249c82d5cd74",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "Exporta tabla_datos4",
+        "func": "// No usa tildes\nlet tabla = global.get(\"tabla_datos\") || [];\nif (!Array.isArray(tabla) || tabla.length === 0) {\n    node.warn(\"tabla_datos vacia\");\n    return null;\n}\n\nlet headers = Object.keys(tabla[0]);\nlet encabezado = headers.join(\",\") + \"\\n\";\nlet lineas = tabla.map(row => headers.map(k => row[k]).join(\",\")).join(\"\\n\");\n\nmsg.payload = encabezado + lineas;\n\nlet ahora = new Date();\nlet yyyy = ahora.getFullYear();\nlet mm = String(ahora.getMonth() + 1).padStart(2, \"0\");\nlet dd = String(ahora.getDate()).padStart(2, \"0\");\nlet fecha = \"\" + yyyy + mm + dd;\n\nmsg.filename = \"/home/itoroc/Database/\" + fecha + \"_Actual.csv\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 980,
+        "wires": [
+            [
+                "f5919a3e2f538f84"
+            ]
+        ]
+    },
+    {
+        "id": "7500641285c6e1f8",
+        "type": "exec",
+        "z": "c5e8c60895513477",
+        "command": "python3 /home/itoroc/zonas/tec04_trayecto.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 880,
+        "y": 1060,
+        "wires": [
+            [
+                "73fd832c96b30a7c"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "73fd832c96b30a7c",
+        "type": "function",
+        "z": "c5e8c60895513477",
+        "name": "function 8",
+        "func": "// Dispara el refresco del iframe\n// No usa tildes\nmsg.payload = Date.now();\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 960,
+        "wires": [
+            [
+                "4f95cbc3d0b1930a"
+            ]
+        ]
+    },
+    {
+        "id": "f0d95fa17a1ef47d",
+        "type": "function",
+        "z": "8eb05c90b84f0bfd",
+        "name": "Lista archivos",
+        "func": "msg.payload = \"/home/itoroc/Database\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "99fbdecdffba6d68"
+            ]
+        ]
+    },
+    {
+        "id": "235fb77f0d74ff9e",
+        "type": "function",
+        "z": "8eb05c90b84f0bfd",
+        "name": "Muestra datos",
+        "func": "let archivos = msg.files;\n\nif (!Array.isArray(archivos)) return null;\n\nlet basePath = \"/home/itoroc/Database\";\n\nlet tabla = archivos\n    .filter(nombre => nombre.endsWith(\".csv\") && nombre.length >= 13)\n    .map((nombre, i) => {\n        let fechaRaw = nombre.substring(0, 8);\n        let fechaFormateada = `${fechaRaw.substring(0, 4)}-${fechaRaw.substring(4, 6)}-${fechaRaw.substring(6, 8)}`;\n\n        let partes = nombre.split(\"_\");\n        let procedimiento = partes.length > 1 ? partes.slice(1).join(\"_\").replace(\".csv\", \"\") : \"Desconocido\";\n\n        return {\n            Nro: (i + 1).toString().padStart(4, '0'),\n            Fecha: fechaFormateada,\n            Procedimiento: procedimiento,\n            Archivo: nombre,\n            Ruta: basePath + \"/\" + nombre\n        };\n    });\n\nmsg.payload = tabla;\n\n// Mostrar solo columnas seleccionadas\nmsg.ui_control = {\n    tabulator: {\n        layout: \"fitColumns\",\n        columns: [\n            { title: \"Nro\", field: \"Nro\", width: 80 },\n            { title: \"Fecha\", field: \"Fecha\" },\n            { title: \"Procedimiento\", field: \"Procedimiento\" }\n        ]\n    }\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 420,
+        "wires": [
+            [
+                "bbe89fe1e6d1adb2"
+            ]
+        ]
+    },
+    {
+        "id": "ae8f3bb2e0373a4e",
+        "type": "function",
+        "z": "8eb05c90b84f0bfd",
+        "name": "extrae ruta",
+        "func": "msg.filename = msg.payload.Ruta;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 580,
+        "wires": [
+            [
+                "d038a467176c586b"
+            ]
+        ]
+    },
+    {
+        "id": "d038a467176c586b",
+        "type": "file in",
+        "z": "8eb05c90b84f0bfd",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 1000,
+        "y": 660,
+        "wires": [
+            [
+                "bea3edd82d97deb2"
+            ]
+        ]
+    },
+    {
+        "id": "bea3edd82d97deb2",
+        "type": "csv",
+        "z": "8eb05c90b84f0bfd",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "once",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Nro,Ano,Mes,Dia,Hora,Minuto,Segundo,Latitud,Longitud,Intensidad,CPM,Dosis_uSv_h",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 930,
+        "y": 740,
+        "wires": [
+            [
+                "0a765d486dc3bc50",
+                "a3e6bf0baacfc66d"
+            ]
+        ]
+    },
+    {
+        "id": "ec9d50a21a5a331a",
+        "type": "ui_button",
+        "z": "8eb05c90b84f0bfd",
+        "name": "",
+        "group": "e7b65e78c4164a62",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "ABRIR CARPETA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 620,
+        "wires": [
+            [
+                "11d57e6546282c18"
+            ]
+        ]
+    },
+    {
+        "id": "11d57e6546282c18",
+        "type": "exec",
+        "z": "8eb05c90b84f0bfd",
+        "command": "/home/itoroc/abrir-carpeta.sh",
+        "addpay": "",
+        "append": "/home/itoroc/Database",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Abrir carpeta",
+        "x": 590,
+        "y": 620,
+        "wires": [
+            [],
+            [
+                "30f176ae1e4663c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "30f176ae1e4663c8",
+        "type": "debug",
+        "z": "8eb05c90b84f0bfd",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "8ebeebe23c5778de",
+        "type": "ui_button",
+        "z": "8eb05c90b84f0bfd",
+        "name": "",
+        "group": "e7b65e78c4164a62",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "CARGAR LISTA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 420,
+        "wires": [
+            [
+                "f0d95fa17a1ef47d"
+            ]
+        ]
+    },
+    {
+        "id": "5e7cc05ebe593760",
+        "type": "function",
+        "z": "8eb05c90b84f0bfd",
+        "name": "Carga",
+        "func": "// Limpia todos los puntos activos anteriores primero\nlet msg_clear = {\n    payload: {\n        command: \"clear_layer\",\n        layer: \"Históricos\"\n    }\n};\n\n// Genera nuevos puntos\nconst datos = flow.get(\"datos_marcadores\") || [];\nconst marcadores = datos.map((d, i) => {\n    const cpm = parseFloat(d.CPM);\n    const lat = parseFloat(d.Latitud);\n    const lon = parseFloat(d.Longitud);\n    const dosis = d.Dosis_uSv_h;\n\n    let nivel = \"00\", color = \"gray\", fillColor = \"#ccc\", fillOpacity = 0.10;\n\n    if (cpm >= 5 && cpm <= 150) {\n        nivel = \"01\"; color = \"green\"; fillColor = \"#a0f0a0\"; fillOpacity = 0.20;\n    } else if (cpm <= 500) {\n        nivel = \"02\"; color = \"yellow\"; fillColor = \"#ffff99\"; fillOpacity = 0.30;\n    } else if (cpm <= 1500) {\n        nivel = \"03\"; color = \"orange\"; fillColor = \"#ffd966\"; fillOpacity = 0.40;\n    } else if (cpm <= 6000) {\n        nivel = \"04\"; color = \"red\"; fillColor = \"#ff9999\"; fillOpacity = 0.50;\n    } else if (cpm <= 15000) {\n        nivel = \"05\"; color = \"purple\"; fillColor = \"#d19fe8\"; fillOpacity = 0.60;\n    }\n\n    let hora = new Date().toTimeString().split(' ')[0];\n    let texto = `Hora: ${hora}\\\\t CPM: ${cpm}\\\\t Nivel: ${nivel}<br>Lat/Lon: ${lat}/${lon}<br>Dosis: ${dosis} µSv/h`;\n\n    return {\n        name: `Punto_${i}`,  // IMPORTANTE: nombres únicos consistentes\n        lat: lat,\n        lon: lon,\n        layer: \"Históricos\",\n        icon: \"fa-map-marker\",\n        iconColor: color,\n        markerSize: \"small\",\n        color: color,\n        fillColor: fillColor,\n        fillOpacity: fillOpacity,\n        radius: 5,\n        stroke: false,\n        popup: texto\n    };\n});\n\n// Devuelve primero el mensaje de limpieza, luego los nuevos puntos\nreturn [\n    [msg_clear],           // salida 1: limpiar mapa\n    [{ payload: marcadores }]  // salida 2: nuevos puntos\n];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 840,
+        "wires": [
+            [
+                "59c89f0bd8b227b7"
+            ],
+            [
+                "6c59e0a8a621f01b"
+            ]
+        ]
+    },
+    {
+        "id": "c214cd8a9d249b25",
+        "type": "ui_button",
+        "z": "8eb05c90b84f0bfd",
+        "name": "",
+        "group": "e7b65e78c4164a62",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "CARGAR MAPA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 560,
+        "y": 840,
+        "wires": [
+            [
+                "d14dbf2ee3ca8e05"
+            ]
+        ]
+    },
+    {
+        "id": "d14dbf2ee3ca8e05",
+        "type": "function",
+        "z": "8eb05c90b84f0bfd",
+        "name": "Borrar",
+        "func": "return {\n    payload: {\n        command: \"clear_layer\",\n        layer: \"Históricos\"\n    }\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 840,
+        "wires": [
+            [
+                "5e7cc05ebe593760"
+            ]
+        ]
+    },
+    {
+        "id": "a3e6bf0baacfc66d",
+        "type": "function",
+        "z": "8eb05c90b84f0bfd",
+        "name": "function 5",
+        "func": "// Guarda datos para uso posterior en mapa\nflow.set(\"datos_marcadores\", msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c59e0a8a621f01b",
+        "type": "delay",
+        "z": "8eb05c90b84f0bfd",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1068,
+        "y": 895,
+        "wires": [
+            [
+                "59c89f0bd8b227b7"
+            ]
+        ]
+    },
+    {
+        "id": "59c89f0bd8b227b7",
+        "type": "ui_worldmap",
+        "z": "8eb05c90b84f0bfd",
+        "group": "e7b65e78c4164a62",
+        "order": 2,
+        "width": 10,
+        "height": 5,
+        "name": "Mapa Historico",
+        "lat": "",
+        "lon": "",
+        "zoom": "16",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap_hist",
+        "overlist": "DR,CO,DN,BU,HM",
+        "maplist": "OSMC",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1260,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "bbe89fe1e6d1adb2",
+        "type": "ui_table",
+        "z": "8eb05c90b84f0bfd",
+        "group": "e7b65e78c4164a62",
+        "name": "Historial de Procedimientos",
+        "order": 1,
+        "width": 10,
+        "height": 5,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 1060,
+        "y": 420,
+        "wires": [
+            [
+                "ae8f3bb2e0373a4e"
+            ]
+        ]
+    },
+    {
+        "id": "0a765d486dc3bc50",
+        "type": "ui_table",
+        "z": "8eb05c90b84f0bfd",
+        "group": "e7b65e78c4164a62",
+        "name": "Detalle",
+        "order": 3,
+        "width": 20,
+        "height": 5,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 1240,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "99fbdecdffba6d68",
+        "type": "fs-ops-dir",
+        "z": "8eb05c90b84f0bfd",
+        "name": "",
+        "path": "payload",
+        "pathType": "msg",
+        "filter": "*",
+        "filterType": "str",
+        "dir": "files",
+        "dirType": "msg",
+        "x": 630,
+        "y": 420,
+        "wires": [
+            [
+                "235fb77f0d74ff9e"
+            ]
+        ]
+    }
+]
